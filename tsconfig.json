@@ -29,9 +29,11 @@
     "buildOnSave": false,
     "files": [
         "./app/bootstrap.ts",
+        "./app/colores/colores.component.ts",
         "./app/helloworld/hello-world.component.ts",
         "./app/helloworld/hello-world.service.ts",
         "./app/main.ts",
+        "./app/shared/pipes/decorator.pipe.ts",
         "./test/helloworld/hello-world.component.spec.ts",
         "./test/helloworld/hello-world.service.spec.ts",
         "./test/init.ts"
