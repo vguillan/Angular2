@@ -1,5 +1,6 @@
 import {DecoratorPipe} from "../shared/pipes/decorator.pipe";
-import {Component, OnInit } from '@angular/core';
+import {Component, OnInit, Inject} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'ng2-colores',
@@ -18,6 +19,7 @@ import {Component, OnInit } from '@angular/core';
           </span>
       </li>
     </ul>
+    <button (click)="onClickButton()">Navegar a example</button>
     </div>`,
   styles: [`
     .odd{
@@ -45,7 +47,7 @@ export class ColoresComponent implements OnInit{
   private show: boolean
   private currency: number
 
-  constructor(){
+  constructor(@Inject(Router) private router:Router){
 
   }
 
@@ -65,5 +67,9 @@ export class ColoresComponent implements OnInit{
     this.currency = 77.657
   }
 
+  onClickButton(){
+    console.log('click')
+    this.router.navigate(['/example', 'parameter'])
+  }
 
 }

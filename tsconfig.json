@@ -30,6 +30,11 @@
     "files": [
         "./app/bootstrap.ts",
         "./app/colores/colores.component.ts",
+        "./app/example/databinding.component.ts",
+        "./app/example/datachild.component.ts",
+        "./app/example/example.service.ts",
+        "./app/example/exampleMockFake.service.ts",
+        "./app/example/httpAPIExampleService.service.ts",
         "./app/helloworld/hello-world.component.ts",
         "./app/helloworld/hello-world.service.ts",
         "./app/main.ts",
